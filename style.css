@@ -1,0 +1,137 @@
+/*
+Theme Name: Powder Zero
+Theme URI: https://powderwp.com/
+Author: Brian Gardner
+Author URI: https://briangardner.com/
+Description: A starter block theme for designers and developers.
+Requires at least: 6.6
+Tested up to: 6.6.1
+Requires PHP: 7.0
+Version: 0.9
+License: GNU General Public License v3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: powder-zero
+Tags: block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, full-site-editing, one-column, style-variations, translation-ready, wide-blocks
+*/
+
+
+/* Defaults
+---------------------------------------- */
+
+a,
+button,
+input,
+textarea,
+.wp-element-button {
+	transition: all 0.2s ease-in-out;
+}
+
+a,
+a:focus,
+a:hover,
+a:not(.wp-element-button) {
+	text-decoration-thickness: 1px;
+}
+
+b,
+strong,
+th {
+	font-weight: var(--wp--custom--font-weight--medium);
+}
+
+/* -- Forms -- */
+
+input,
+select,
+textarea {
+	background-color: var(--wp--preset--color--base);
+	border: 1px solid var(--wp--preset--color--contrast);
+	border-radius: 0;
+	color: var(--wp--preset--color--contrast);
+	font-family: inherit;
+	font-size: var(--wp--preset--font-size--medium);
+	font-weight: var(--wp--custom--font-weight--light);
+	line-height: var(--wp--custom--line-height--medium);
+	padding: 10px 15px;
+	width: 100%;
+}
+
+input:focus,
+textarea:focus {
+	filter: brightness(95%);
+	outline: none;
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+	width: auto;
+}
+
+input[type="button"],
+input[type="email"],
+input[type="search"],
+input[type="submit"],
+input[type="text"],
+textarea {
+	-webkit-appearance: none;
+}
+
+::placeholder {
+	color: var(--wp--preset--color--contrast);
+	font-size: var(--wp--preset--font-size--small);
+	opacity: 0.5;
+}
+
+/* Blocks
+---------------------------------------- */
+
+/* -- Navigation -- */
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding: var(--wp--preset--spacing--40);
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	padding-top: var(--wp--preset--spacing--40);
+}
+
+.wp-block-navigation__responsive-container-close,
+.wp-block-navigation__responsive-container-open {
+	border: 1px solid currentColor;
+	padding: 2px;
+}
+
+/* -- Navigation Submenu -- */
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open,
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+	background-color: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+}
+
+.has-contrast-background-color .wp-block-navigation .wp-block-navigation__responsive-container.is-menu-open,
+.has-contrast-background-color .wp-block-navigation__submenu-container {
+	background-color: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+}
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+	border-color: var(--wp--preset--color--contrast);
+	min-width: 180px !important;
+	padding: 10px;
+}
+
+.has-contrast-background-color .wp-block-navigation__submenu-container {
+	border-color: var(--wp--preset--color--base);
+}
+
+.wp-block-navigation :where(.wp-block-navigation__submenu-container) .wp-block-navigation-item__content {
+	padding: 2px 10px;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-top: 5px !important;
+}
