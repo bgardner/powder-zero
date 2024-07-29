@@ -44,7 +44,7 @@ function powder_zero_block_styles() {
 
 	$block_styles = array(
 		'core/social-links' => array(
-			'outline' => __( 'Outline', 'powder' ),
+			'outline' => __( 'Outline', 'powder-zero' ),
 		),
 	);
 
