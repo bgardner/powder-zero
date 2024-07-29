@@ -1,7 +1,7 @@
-=== Powder Zero===
+=== Powder Zero ===
 Contributors: bgardner
 Requires at least: 6.6
-Tested up to: 6.6.1
+Tested up to: 6.6
 Requires PHP: 7.0
 Stable tag: 0.9
 License: GNU General Public License v3
